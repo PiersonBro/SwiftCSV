@@ -400,6 +400,7 @@
 				TargetAttributes = {
 					3D1E59B31945FFAC001CF760 = {
 						CreatedOnToolsVersion = 6.0;
+						LastSwiftMigration = 1000;
 					};
 					3D1E59BE1945FFAD001CF760 = {
 						CreatedOnToolsVersion = 6.0;
@@ -744,6 +745,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -762,6 +764,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "naoty.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
