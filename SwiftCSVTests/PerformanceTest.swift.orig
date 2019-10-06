@@ -13,13 +13,21 @@ class PerformanceTest: XCTestCase {
     var csv: CSV!
 
     override func setUp() {
+<<<<<<< HEAD
+        let csvURL = Bundle(for: CSVTests.self).url(forResource: "large", withExtension: "csv")!
+=======
         let csvURL = ResourceHelper.url(forResource: "large", withExtension: "csv")!
+>>>>>>> 22dc4dd1272e990da64ea87a8bc84bb606eb177e
         csv = try! CSV(url: csvURL)
     }
 
     func testParsePerformance() {
         measure {
+<<<<<<< HEAD
+            _ = self.csv.rows
+=======
             _ = self.csv.namedRows
+>>>>>>> 22dc4dd1272e990da64ea87a8bc84bb606eb177e
         }
     }
 }

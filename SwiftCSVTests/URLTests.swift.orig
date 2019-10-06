@@ -13,7 +13,11 @@ class URLTests: XCTestCase {
     var csv: CSV!
     
     func testEmptyFields() {
+<<<<<<< HEAD
+        let csvURL = Bundle(for: CSVTests.self).url(forResource: "empty_fields", withExtension: "csv")!
+=======
         let csvURL = ResourceHelper.url(forResource: "empty_fields", withExtension: "csv")!
+>>>>>>> 22dc4dd1272e990da64ea87a8bc84bb606eb177e
         csv = try! CSV(url: csvURL)
         let expected = [
             ["id": "1", "name": "John", "age": "23"],
@@ -23,13 +27,21 @@ class URLTests: XCTestCase {
             ["id": "", "name": "", "age": ""],
             ["id": "", "name": "Tom", "age": ""]
         ]
+<<<<<<< HEAD
+        for (index, row) in csv.rows.enumerated() {
+=======
         for (index, row) in csv.namedRows.enumerated() {
+>>>>>>> 22dc4dd1272e990da64ea87a8bc84bb606eb177e
             XCTAssertEqual(expected[index], row)
         }
     }
     
     func testQuotes() {
+<<<<<<< HEAD
+        let csvURL = Bundle(for: CSVTests.self).url(forResource: "quotes", withExtension: "csv")!
+=======
         let csvURL = ResourceHelper.url(forResource: "quotes", withExtension: "csv")!
+>>>>>>> 22dc4dd1272e990da64ea87a8bc84bb606eb177e
         csv = try! CSV(url: csvURL)
         let expected = [
             ["id": "4", "name, first": "Alex", "name, last": "Smith"],
@@ -56,7 +68,11 @@ class URLTests: XCTestCase {
             ],
             [:]
         ]
+<<<<<<< HEAD
+        for (index, row) in csv.rows.enumerated() {
+=======
         for (index, row) in csv.namedRows.enumerated() {
+>>>>>>> 22dc4dd1272e990da64ea87a8bc84bb606eb177e
             XCTAssertEqual(expected[index], row)
         }
     }

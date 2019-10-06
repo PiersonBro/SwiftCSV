@@ -7,6 +7,14 @@
 //
 
 extension String {
+<<<<<<< HEAD
+    var firstLine: String {
+        var index = startIndex
+        while index < endIndex && self[index] != "\r\n" && self[index] != "\n" && self[index] != "\r" {
+            index = self.index(after: index)
+        }
+        return String(self[startIndex..<index])
+=======
     internal var firstLine: String {
         var current = startIndex
         while current < endIndex && self[current].isNewline == false {
@@ -19,5 +27,6 @@ extension String {
 extension Character {
     internal var isNewline: Bool {
         return self == "\n" || self == "\r\n" || self == "\r"
+>>>>>>> 22dc4dd1272e990da64ea87a8bc84bb606eb177e
     }
 }

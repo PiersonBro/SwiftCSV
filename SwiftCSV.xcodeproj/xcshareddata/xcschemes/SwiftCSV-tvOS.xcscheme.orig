@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
+<<<<<<< HEAD:SwiftCSV.xcodeproj/xcshareddata/xcschemes/SwiftCSV tvOS.xcscheme
    LastUpgradeVersion = "0930"
+=======
+   LastUpgradeVersion = "1020"
+>>>>>>> 22dc4dd1272e990da64ea87a8bc84bb606eb177e:SwiftCSV.xcodeproj/xcshareddata/xcschemes/SwiftCSV-tvOS.xcscheme
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +18,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5FB74B901CCB9274009DDBF1"
+               BlueprintIdentifier = "5FB74BAC1CCB929D009DDBF1"
                BuildableName = "SwiftCSV.framework"
-               BlueprintName = "SwiftCSV OSX"
+               BlueprintName = "SwiftCSV tvOS"
                ReferencedContainer = "container:SwiftCSV.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -26,15 +30,16 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      codeCoverageEnabled = "YES"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5FB74B991CCB9274009DDBF1"
+               BlueprintIdentifier = "5FB74BB51CCB929D009DDBF1"
                BuildableName = "SwiftCSVTests.xctest"
-               BlueprintName = "SwiftCSV OSXTests"
+               BlueprintName = "SwiftCSV tvOSTests"
                ReferencedContainer = "container:SwiftCSV.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -42,9 +47,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5FB74B901CCB9274009DDBF1"
+            BlueprintIdentifier = "5FB74BAC1CCB929D009DDBF1"
             BuildableName = "SwiftCSV.framework"
-            BlueprintName = "SwiftCSV OSX"
+            BlueprintName = "SwiftCSV tvOS"
             ReferencedContainer = "container:SwiftCSV.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,9 +69,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5FB74B901CCB9274009DDBF1"
+            BlueprintIdentifier = "5FB74BAC1CCB929D009DDBF1"
             BuildableName = "SwiftCSV.framework"
-            BlueprintName = "SwiftCSV OSX"
+            BlueprintName = "SwiftCSV tvOS"
             ReferencedContainer = "container:SwiftCSV.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -82,9 +87,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5FB74B901CCB9274009DDBF1"
+            BlueprintIdentifier = "5FB74BAC1CCB929D009DDBF1"
             BuildableName = "SwiftCSV.framework"
-            BlueprintName = "SwiftCSV OSX"
+            BlueprintName = "SwiftCSV tvOS"
             ReferencedContainer = "container:SwiftCSV.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

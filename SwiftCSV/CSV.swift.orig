@@ -8,6 +8,14 @@
 
 import Foundation
 
+<<<<<<< HEAD
+public class CSV {
+    static public let comma: Character = ","
+    
+    public var header: [String]!
+    var _rows: [[String: String]]? = nil
+    var _columns: [String: [String]]? = nil
+=======
 public protocol View {
     associatedtype Rows
     associatedtype Columns
@@ -20,6 +28,7 @@ public protocol View {
 
 open class CSV {
     static public let comma: Character = ","
+>>>>>>> 22dc4dd1272e990da64ea87a8bc84bb606eb177e
     
     public let header: [String]
 
@@ -88,7 +97,15 @@ open class CSV {
         self.text = string
         self.delimiter = delimiter
         self.loadColumns = loadColumns
+<<<<<<< HEAD
+        
+        let createHeader: ([String]) -> () = { head in
+            self.header = head
+        }
+        enumerateAsArray(block: createHeader, limitTo: 1, startAt: 0)
+=======
         self.header = try Parser.array(text: string, delimiter: delimiter, limitTo: 1).first ?? []
+>>>>>>> 22dc4dd1272e990da64ea87a8bc84bb606eb177e
     }
 
     @available(*, deprecated, message: "Use init(url:delimiter:encoding:loadColumns:) instead of this path-based approach. Also, calling the parameter `name` instead of `path` was a mistake.")
@@ -98,6 +115,16 @@ open class CSV {
 
     /// Load a CSV file as a named resource from `bundle`.
     ///
+<<<<<<< HEAD
+    /// name: name of the file (will be passed to String(contentsOfFile:encoding:) to load)
+    /// delimiter: character to split row and header fields by (default is ',')
+    /// encoding: encoding used to read file (default is NSUTF8StringEncoding)
+    /// loadColumns: whether to populate the columns dictionary (default is true)
+    public convenience init(name: String, delimiter: Character = comma, encoding: String.Encoding = .utf8, loadColumns: Bool = true) throws {
+        let contents = try String(contentsOfFile: name, encoding: encoding)
+    
+        self.init(string: contents, delimiter: delimiter, loadColumns: loadColumns)
+=======
     /// - parameter name: Name of the file resource inside `bundle`.
     /// - parameter ext: File extension of the resource; use `nil` to load the first file matching the name (default is `nil`)
     /// - parameter bundle: `Bundle` to use for resource lookup (default is `.main`)
@@ -111,15 +138,23 @@ open class CSV {
             return nil
         }
         try self.init(url: url, delimiter: delimiter, encoding: encoding, loadColumns: loadColumns)
+>>>>>>> 22dc4dd1272e990da64ea87a8bc84bb606eb177e
     }
     
     /// Load a CSV file from `url`.
     ///
+<<<<<<< HEAD
+    /// url: url pointing to the file (will be passed to String(contentsOfURL:encoding:) to load)
+    /// delimiter: character to split row and header fields by (default is ',')
+    /// encoding: encoding used to read file (default is NSUTF8StringEncoding)
+    /// loadColumns: whether to populate the columns dictionary (default is true)
+=======
     /// - parameter url: URL of the file (will be passed to `String(contentsOfURL:encoding:)` to load)
     /// - parameter delimiter: Character used to separate row and header fields (default is ',')
     /// - parameter encoding: Character encoding to read file (default is `.utf8`)
     /// - parameter loadColumns: Whether to populate the columns dictionary (default is `true`)
     /// - throws: `CSVParseError` when parsing the contents of `url` fails, or file loading errors.
+>>>>>>> 22dc4dd1272e990da64ea87a8bc84bb606eb177e
     public convenience init(url: URL, delimiter: Character = comma, encoding: String.Encoding = .utf8, loadColumns: Bool = true) throws {
         let contents = try String(contentsOf: url, encoding: encoding)
         
@@ -127,7 +162,11 @@ open class CSV {
     }
     
     /// Turn the CSV data into NSData using a given encoding
+<<<<<<< HEAD
+    public func dataUsingEncoding(encoding: String.Encoding) -> Data? {
+=======
     open func dataUsingEncoding(_ encoding: String.Encoding) -> Data? {
+>>>>>>> 22dc4dd1272e990da64ea87a8bc84bb606eb177e
         return description.data(using: encoding)
     }
 }

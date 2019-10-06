@@ -421,13 +421,21 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0730;
+<<<<<<< HEAD
+				LastUpgradeCheck = 0930;
+=======
 				LastUpgradeCheck = 1020;
+>>>>>>> 22dc4dd1272e990da64ea87a8bc84bb606eb177e
 				ORGANIZATIONNAME = "Naoto Kaneko";
 				TargetAttributes = {
 					3D1E59B31945FFAC001CF760 = {
 						CreatedOnToolsVersion = 6.0;
+<<<<<<< HEAD
+						LastSwiftMigration = 1000;
+=======
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Manual;
+>>>>>>> 22dc4dd1272e990da64ea87a8bc84bb606eb177e
 					};
 					3D1E59BE1945FFAD001CF760 = {
 						CreatedOnToolsVersion = 6.0;
@@ -715,11 +723,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				METAL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -767,10 +776,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				METAL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+<<<<<<< HEAD
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 4.0;
+=======
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+>>>>>>> 22dc4dd1272e990da64ea87a8bc84bb606eb177e
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -781,7 +795,12 @@
 		3D1E59CB1945FFAD001CF760 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+<<<<<<< HEAD
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+=======
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+>>>>>>> 22dc4dd1272e990da64ea87a8bc84bb606eb177e
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -794,14 +813,23 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+<<<<<<< HEAD
+				SWIFT_VERSION = 4.2;
+=======
 				SWIFT_VERSION = 5.0;
+>>>>>>> 22dc4dd1272e990da64ea87a8bc84bb606eb177e
 			};
 			name = Debug;
 		};
 		3D1E59CC1945FFAD001CF760 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+<<<<<<< HEAD
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+=======
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+>>>>>>> 22dc4dd1272e990da64ea87a8bc84bb606eb177e
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -813,7 +841,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "naoty.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+<<<<<<< HEAD
+				SWIFT_VERSION = 4.2;
+=======
 				SWIFT_VERSION = 5.0;
+>>>>>>> 22dc4dd1272e990da64ea87a8bc84bb606eb177e
 			};
 			name = Release;
 		};
@@ -950,7 +982,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
+<<<<<<< HEAD
+				CODE_SIGN_IDENTITY = "";
+=======
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+>>>>>>> 22dc4dd1272e990da64ea87a8bc84bb606eb177e
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -975,7 +1011,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
+<<<<<<< HEAD
+				CODE_SIGN_IDENTITY = "";
+=======
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+>>>>>>> 22dc4dd1272e990da64ea87a8bc84bb606eb177e
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
@@ -1039,7 +1079,11 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
+<<<<<<< HEAD
+				CODE_SIGN_IDENTITY = "";
+=======
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+>>>>>>> 22dc4dd1272e990da64ea87a8bc84bb606eb177e
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1065,7 +1109,11 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
+<<<<<<< HEAD
+				CODE_SIGN_IDENTITY = "";
+=======
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+>>>>>>> 22dc4dd1272e990da64ea87a8bc84bb606eb177e
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
